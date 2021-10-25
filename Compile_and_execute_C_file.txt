@@ -1,0 +1,4 @@
+To compile and execute C file
+
+(base) caoimhinvallely@Caoimhins-MBP Week05 % gcc -g exampleStruct.c -o hello
+(base) caoimhinvallely@Caoimhins-MBP Week05 % ./hello 
