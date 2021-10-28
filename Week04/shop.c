@@ -89,23 +89,23 @@ void printShop(struct Shop s)
 
 int main(void)
 {
-    // struct Customer dominic = { "Dominic", 100.0 };
-    
-    // struct Product coke = { "Can Coke", 1.10 };
-    // struct Product bread = { "Bread", 0.70 };
-    // // printProduct(coke);
-    
-    // struct ProductStock cokeStock = { coke, 20 };
-    // struct ProductStock breadStock = { bread, 2 };
+    struct Customer dominic = { "Dominic", 100.0 };
 
-    // dominic.shoppingList[dominic.index++] = cokeStock;
-    // dominic.shoppingList[dominic.index++] = breadStock;
+    struct Product coke = { "Can Coke", 1.10 };
+    struct Product bread = { "Bread", 0.70 };
+    // printProduct(coke);
 
-    // printCustomer(dominic);
+    struct ProductStock cokeStock = { coke, 20 };
+    struct ProductStock breadStock = { bread, 2 };
+
+    dominic.shoppingList[dominic.index++] = cokeStock;
+    dominic.shoppingList[dominic.index++] = breadStock;
+
+    printCustomer(dominic);
 
     struct Shop shop = createAndStockShop();
     printShop(shop);
-    // printf("The shop has %d of the product %s\n", cokeStock.quantity, cokeStock.product.name);
+    printf("The shop has %d of the product %s\n", cokeStock.quantity, cokeStock.product.name);
 
     return 0;
 }
